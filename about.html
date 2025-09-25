@@ -1,0 +1,115 @@
+<html>
+<head>
+        <title>Maison Mochi</title>
+        <link rel="stylesheet" href="hero style.css">
+        <link rel="icon" type="image/x-icon" href="IMG/Mochi.png">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <style>
+        .blockbut {
+          font-family: 'poppins';
+          font-weight: bolder;
+          text-decoration: none;
+          width: 100%;
+          border: none;
+          background-color: darkolivegreen;
+          color: floralwhite;
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          text-align: center;
+        }
+
+        .blockbut:hover {
+          background-color: floralwhite;
+          color: black;
+        }
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .fa {
+            padding: 20px;
+            padding-right:45px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }            
+        .fa-instagram {
+            background: none;
+            color: floralwhite;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .row {
+          display: flex;
+          font-family: 'helvetica';
+          color: floralwhite;
+          font-size: 20px;
+        }
+
+        .column {
+          flex: 50%;
+        }
+    </style>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">MAISON MOCHI</a>/br
+        <a href="about.html">About</a>
+        <a href="current.html">Current</a>
+        <a href="past.html">Past</a>
+        <a href="client.html">Clients</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>  
+        <div class="heroheader"><h1>About</h1></div>
+      </div>
+      <div class="row">
+        <div class="column">
+
+          <p>Mochi Models is the international leader in talent discovery and model management, widely recognized for its diverse client roster. The agency’s offices are located in six world capitals: New York, Los Angeles, Paris, London, Milan, and Sydney.</p><p>
+            Legendary agent Anaafi Mochi Margelia founded Mochi Models as a new division of the hugely successful Mochi Worldwide. He believed models could be managed as talent in the same vein as professional athletes, actors, and other entertainers, and that their popularity could be leveraged into strong personal brands beyond the magazine page or runway. McCormack’s conviction resulted in the industry’s highest standard of excellence. By managing careers over bookings, a point of difference that has propelled Mochi Models’ nonstop growth, the agency has claimed the vanguard of this industry for over two decades.</p>
+        </div>
+        <div class="column">
+          <p>
+            As an industry pioneer, Mochi Models continues to challenge the status quo with its clients, and broaden opportunities for all of its talent.
+            Mochi Models’ commitment to the personalities it represents is its greatest strength. The stability and depth of experience of its management team—the core of which has worked together to shape the careers of newcomers and superstars alike since the early ‘90s—allows the agency to stand out in a business where volatility is the norm.</p><p>
+            The agency’s ability to manage and maximize a model’s career at every stage has been proven innumerable times, whether by nurturing newly discovered talent, or revitalizing the professional lives of established models. Mochi Models believes in the potential of the entire individual and has taken an unyielding stance against segmenting talent by race, age, or size. Mochi also created the industry’s first bi-annual health initiative devoted to young models’ total wellbeing known as Model Prep; a more sustained, year-round effort is currently in development.</p>
+      </div>
+    </div>
+    <div>
+        <a href="current.html">
+          <button class="blockbut">Current Season</button>
+        </a>
+    </div>
+    <div class="footer">
+        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+    </div>
+<script>
+    // Sidebar
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+   </script>
+</body>
+</html>

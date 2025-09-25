@@ -1,0 +1,193 @@
+<html>
+<head>
+        <title>Maison Mochi</title>
+        <link rel="stylesheet" href="hero style.css">
+        <link rel="icon" type="image/x-icon" href="IMG/Mochi.png">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <style>
+        .blockbut {
+          font-family: 'poppins';
+          font-weight: bolder;
+          text-decoration: none;
+          width: 100%;
+          border: none;
+          background-color: darkolivegreen;
+          color: floralwhite;
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          text-align: center;
+        }
+
+        .blockbut:hover {
+          background-color: floralwhite;
+          color: black;
+        }
+        .block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border-radius: 10px;
+            background-color: floralwhite;
+            margin: 30px;
+        }
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .fa {
+            padding: 20px;
+            padding-right:45px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }            
+        .fa-instagram {
+            background: none;
+            color: floralwhite;
+        }
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-bottom: 10px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    </style>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">MAISON MOCHI</a>/br
+        <a href="about.html">About</a>
+        <a href="current.html">Current</a>
+        <a href="past.html">Past</a>
+        <a href="client.html">Clients</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>  
+      </div>
+ 
+   <div class="heroheader"><h1>Past</h1></div>
+   <div class="row"> 
+    <div class="column">
+      <img src="IMG/model with oversized flower in hand.jpg" alt="model with oversized flower in hand" style="width:100%">
+      <img src="IMG/model sitting in box wearing polka dot top and black shorts.jpg" alt="model sitting in box wearing polka dot top and black shorts" style="width:100%">
+      
+  </div>
+  <div class="column">
+    <img src="IMG/male and female model wearing mismatched adidas gucci sportswear.jpg" alt="male and female model wearing mismatched adidas gucci sportswear" style="width:100%">
+    <img src="IMG/model in untied adidas gucci shoes and socks wearing matching yellow sun costume.jpg" alt="model in untied adidas gucci shoes and socks wearing matching yellow sun costume" style="width:100%">
+  </div> 
+  <div class="column">
+    <img src="IMG/woman in adidas gucci top with skirt and clogs.jpg" alt="two women posing in their pattern dresses" style="width:100%">
+    <img src="IMG/shirtless male in pinstripe slacks holding silver plate.jpg" alt="shirtless male in pinstripe slacks holding silver plate" style="width:100%">
+</div> 
+<div class="column">
+  <img src="IMG/model jumping in long striped stranded skirt.jpg" alt="model jumping in long striped stranded skirt" style="width:100%">
+  <img src="IMG/model wearing gucci adidas yellow polo and shorts with silver prop wings.jpg" alt="model wearing gucci adidas yellow polo and shorts with silver prop wings" style="width:100%">
+</div> 
+   </div>
+   <div>
+    <a href="current.html">
+      <button class="blockbut">Current</button>
+    </a>
+</div>
+    <div class="footer">
+        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+    </div>
+<script>
+    // Sidebar
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+    // Hero Slideshow
+    let slideIndex = 0;
+        showSlides();
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 7000); // Change image every 7 seconds
+    }
+    // Change image every 5 seconds
+            </script>
+</body>
+</html>

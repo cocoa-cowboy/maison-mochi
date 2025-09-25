@@ -1,0 +1,136 @@
+<html>
+<head>
+        <title>Maison Mochi</title>
+        <link rel="stylesheet" href="hero style.css">
+        <link rel="icon" type="image/x-icon" href="IMG/Mochi.png">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <style>
+            .blockbut {
+          font-family: 'poppins';
+          font-weight: bolder;
+          text-decoration: none;
+          width: 100%;
+          border: none;
+          background-color: darkolivegreen;
+          color: floralwhite;
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          text-align: center;
+        }
+
+        .blockbut:hover {
+          background-color: floralwhite;
+          color: black;
+        }
+        .block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border-radius: 10px;
+            background-color: floralwhite;
+            margin: 30px;
+        }
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .fa {
+            padding: 20px;
+            padding-right:45px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }            
+        .fa-instagram {
+            background: none;
+            color: floralwhite;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        
+    </style>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">MAISON MOCHI</a>/br
+        <a href="about.html">About</a>
+        <a href="current.html">Current</a>
+        <a href="past.html">Past</a>
+        <a href="client.html">Clients</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>  
+      </div>
+   <div class="heroheader"><h1>Clients</h1></div>
+   <div class="row">
+    <div class="column">
+      <img src="IMG/prada.svg" alt="prada-logo" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="IMG/hermes.svg" alt="hermes-logo" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="IMG/versace.svg" alt="versace-logo" style="width:100%">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="IMG/fendi.svg" alt="fendi-logo" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="IMG/louis-vuitton.svg" alt="louis-vuitton-logo" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="IMG/yves-saint-laurent.svg" alt="yves-saint-laurent-logo" style="width:100%">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="IMG/dior.svg" alt="dior-logo" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="IMG/gucci.svg" alt="gucci-logo" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="IMG/chanel.svg" alt="chanel-logo" style="width:100%">
+    </div>
+  </div>
+  <div>
+    <a href="index.html">
+      <button class="blockbut">Home</button>
+    </a>
+</div>
+    <div class="footer">
+        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+    </div>
+<script>
+    // Sidebar
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+    
+</script>
+</body>
+</html>
